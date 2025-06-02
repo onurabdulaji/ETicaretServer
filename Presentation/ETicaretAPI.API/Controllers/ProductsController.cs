@@ -1,6 +1,4 @@
-﻿using ETicaretAPI.Domain.Entities;
-
-namespace ETicaretAPI.API.Controllers;
+﻿namespace ETicaretAPI.API.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class ProductsController : ControllerBase
@@ -23,11 +21,9 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task Get()
+    public async Task<IActionResult> Get()
     {
-        Order order = await _orderReadRepository.GetByIdAsync("8149d131-b11c-4f28-9ac1-bce0d6096c80");
-        order.Address = "Istanbul, Turkey";
-        await _orderWriteRepository.SaveAsync();
+        return Ok("Merhaba");
     }
 
 }
