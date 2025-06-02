@@ -1,0 +1,10 @@
+﻿global using ETicaretAPI.Application.Repositories;
+global using ETicaretAPI.Domain.Entities;
+global using ETicaretAPI.Domain.Entities.Commons;
+global using ETicaretAPI.Persistence.Contexts;
+global using ETicaretAPI.Persistence.Repositories;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using System.Linq.Expressions;
